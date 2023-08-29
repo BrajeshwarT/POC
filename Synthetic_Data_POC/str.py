@@ -24,8 +24,8 @@ def dtfr(inpt):
 
 def main():
     load_dotenv(find_dotenv())
-    HUGGINGFACEHUB_API_TOKEN = os.environ['HUGGINGFACEHUB_API_TOKEN']
-    OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
+    HUGGINGFACEHUB_API_TOKEN = st.secrets['HUGGINGFACEHUB_API_TOKEN']
+    OPENAI_API_KEY = st.secrets['OPENAI_API_KEY']
     llm_list = ['chat gpt', 'Falcon', 'FLAN']
     chosen_llm = st.selectbox(label="Choose a model", options=llm_list)
 
