@@ -7,3 +7,4 @@ regex==2023.6.3
 streamlit==1.24.1
 openai
 huggingface_hub
+json
