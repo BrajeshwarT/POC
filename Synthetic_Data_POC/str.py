@@ -93,8 +93,8 @@ def main():
                 json.dump(a, json_file, indent=4)
             st.download_button('Download JSON', json_filename, file_name='myfile.json', key='json-download')
 
-            st.write("### Data Visualization")
-            st.write("Bar chart of data distribution")
+            # st.write("### Data Visualization")
+            # st.write("Bar chart of data distribution")
             numeric_cols = df.select_dtypes(include=[np.number]).columns
 
             # if data_distribution == "Normal":
