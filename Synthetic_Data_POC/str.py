@@ -41,7 +41,7 @@ def main():
     if chosen_llm == 'chat gpt':
         prompt = PromptTemplate(
             input_variables=["info_template"],
-            template="You specialize in creating synthetic data in json format, and have been tasked with generating 10 examples of synthetic data using the provided request in json format. only create data in json format(key:value)  : {info_template}"
+            template="You specialize in creating synthetic data in json format, and have been tasked with generating 50 examples of synthetic data using the provided request in json format. only create data in json format(key:value)  : {info_template}"
         )
     else:
         prompt = PromptTemplate(
