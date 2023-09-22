@@ -12,6 +12,10 @@ import os
 import regex as re
 import json
 
+import sentry_sdk
+sentry_sdk.init(dsn=“https://af537f9e486ffa260a52d65945601d10@o4505923588128768.ingest.sentry.io/4505923592912896”, traces_sample_rate=1.0)
+logging.exception("NOP")
+
 def cnvt(res):
     res = re.sub("[\n]", "", res)
     res = res.replace(" ", "")
